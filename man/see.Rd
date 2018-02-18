@@ -4,7 +4,7 @@
 \alias{see}
 \title{A short function for View}
 \usage{
-see(dat)
+see(...)
 }
 \arguments{
 \item{data}{data object, vec or df to pass}

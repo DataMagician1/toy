@@ -4,7 +4,7 @@
 \alias{h}
 \title{A short function for head, plot, names}
 \usage{
-h(dat)
+h(x, ...)
 }
 \arguments{
 \item{data}{data object, vec or df to pass}

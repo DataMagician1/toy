@@ -8,13 +8,13 @@
 #' lib("ggplot2")
 
 lib <- function(lib_tocheck) {
-    
+
   list_installed_pack = installed.packages()
   check = lib_tocheck %in% list_installed_pack
-  
-  if (check) { 
+
+  if (check) {
     print("library found & loaded")
-    
+
     library(lib_tocheck, character.only = T)
   } else {
     print("library not found, installing it...")
@@ -22,7 +22,7 @@ lib <- function(lib_tocheck) {
     library(lib_tocheck, character.only = T)
     print("library loaded")
     }
-  
+
 }
 
 #' A short function for View
@@ -33,7 +33,7 @@ lib <- function(lib_tocheck) {
 #' @export
 #' @examples
 #' see(c(1,2,3))
-see = function(dat){View(dat)}
+see = View
 
 
 #' A short function for head, plot, names
@@ -46,6 +46,6 @@ see = function(dat){View(dat)}
 #' h(c(1,2,3))
 #' p(x, y)
 #' n(dataset)
-h = function(dat){head(dat)}
-p = function(x, y){plot(x, y)}
-n = function(dat){names(dat)}
+h = head
+p = plot
+n = names
